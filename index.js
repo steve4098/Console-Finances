@@ -94,9 +94,6 @@ console.log(`
    `
 );
 
-let total = 0
-
-
 //total months
 console.log(`Total Months: ${finances.length} months`);
 
@@ -111,13 +108,35 @@ return sum;
 
 console.log(`Total: $${calculateSum(finances)}`);
 
-// average change
-    // second array of differences
-function diff(finances) {
-  let diffFinances = [];
-  for (let i = 1; i < finances.length; i++)  diffFinances.push(finances[i][1] - finances[i - 1][1])
-  return diffFinances;
-}
+let change = 0;
+let average;
+let analysis;
+let net =0;
+let netArray = [];
+let netChangeSum = 0;
+// least min
+// greatest max 
+// let least = []
+// let greatest = []
 
-console.log(diff(finances));
+
+// // average change
+//     // second array of differences
+// function diff(finances) {
+//   let difArray = [];
+//   for (let i = 1; i < finances.length; i++)  difArray.push(finances[i][1] - finances[i - 1][1])
+//   return difArray;
+// }
+
+// console.log(diff(finances));
+
+// const mean = (difArray) => {
+//   let sum = 0;
+//   for (let i = 0; i < difArray.length; i++) {
+//     sum += diffFinances[i];
+//   }
+//   return sum / difArray.length;
+// }
+
+// // console.log(mean(difArray));
 
