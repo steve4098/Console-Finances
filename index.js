@@ -109,11 +109,21 @@ return sum;
 console.log(`Total: $${calculateSum(finances)}`);
 
 // average change
-
+    // second array of differences
 function diff(finances) {
-  var newA = [];
-  for (var i = 1; i < finances.length; i++)  newA.push(finances[i][1] - finances[i - 1][1])
-  return newA;
+  var diffFinances = [];
+  for (var i = 1; i < finances.length; i++)  diffFinances.push(finances[i][1] - finances[i - 1][1])
+  return diffFinances;
 }
 
-// console.log(diff(finances)) // [1, 1, 0, -3]
+    //total of values in differences array
+//  function calculateSum(finances) {
+//   let sum=0
+//    for (let i=0; i<finances.length; i++) {
+//         {sum += finances[i][1]; }
+//     }
+//     return sum;
+// }
+
+// console.log()
+console.log(diff(finances)) // [1, 1, 0, -3]
