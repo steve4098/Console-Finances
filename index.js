@@ -108,6 +108,7 @@ return sum;
 
 console.log(`Total: $${calculateSum(finances)}`);
 
+let total = 0;
 let change = 0;
 let average;
 let analysis;
@@ -118,6 +119,15 @@ let netChangeSum = 0;
 // greatest max 
 // let least = []
 // let greatest = []
+
+for(let index = 0; index < finances.length; index++){
+  for(let index2 = 0; index2 < finances[index].length; index2++) {
+    if(typeof finances[index][index2] !== 'string') {
+      total += finances[index][index2]
+      console.log(total);
+    }
+  }
+}
 
 
 // // average change
