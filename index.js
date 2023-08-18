@@ -94,8 +94,11 @@ console.log(`
    `
 );
 
+let total = 0
+
+
 //total months
-console.log(`Total Months: ${finances.length}`);
+console.log(`Total Months: ${finances.length} months`);
 
 //total value
 function calculateSum(finances) {
