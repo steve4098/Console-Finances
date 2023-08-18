@@ -110,3 +110,10 @@ console.log(`Total: $${calculateSum(finances)}`);
 
 // average change
 
+function diff(finances) {
+  var newA = [];
+  for (var i = 1; i < finances.length; i++)  newA.push(finances[i][1] - finances[i - 1][1])
+  return newA;
+}
+
+// console.log(diff(finances)) // [1, 1, 0, -3]
