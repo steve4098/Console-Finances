@@ -87,19 +87,26 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+//Title and line
 console.log(`
    Financial Analysis
    ------------------
    `
 );
 
+//total months
 console.log(`Total Months: ${finances.length}`);
 
-// let sum=0
+//total value
+function calculateSum(finances) {
+let sum=0
+for (let i=0; i<finances.length; i++) {
+  {sum += finances[i][1]; }
+}
+return sum;
+}
 
-// for (let i=0; i<finances.length; i++) {
-//   {sum += num;} finances[i][1] 
-// }
+console.log(`Total: $${calculateSum(finances)}`);
 
 // let sum = 0;
 // function calculateSum(finances) {
