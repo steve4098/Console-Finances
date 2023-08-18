@@ -108,17 +108,5 @@ return sum;
 
 console.log(`Total: $${calculateSum(finances)}`);
 
-// let sum = 0;
-// function calculateSum(finances) {
+// average change
 
-//   for (let i = 0; i < finances.length; i++) {
-//       sum += finances[i][1];
-//   }
-// }
-
-
-// // finances[1].forEach( num => {
-// //   sum += num;
-// // })
-
-// console.log(sum);
