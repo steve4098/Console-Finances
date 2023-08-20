@@ -146,23 +146,3 @@ Greatest Increase:
 Greatest Decrease: 
 `
 console.log(analysis);
-// // average change
-//     // second array of differences
-// function diff(finances) {
-//   let difArray = [];
-//   for (let i = 1; i < finances.length; i++)  difArray.push(finances[i][1] - finances[i - 1][1])
-//   return difArray;
-// }
-
-// console.log(diff(finances));
-
-// const mean = (difArray) => {
-//   let sum = 0;
-//   for (let i = 0; i < difArray.length; i++) {
-//     sum += diffFinances[i];
-//   }
-//   return sum / difArray.length;
-// }
-
-// // console.log(mean(difArray));
-
