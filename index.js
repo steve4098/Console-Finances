@@ -106,8 +106,6 @@ for (let i=0; i<finances.length; i++) {
 return sum;
 }
 
-console.log(`Total: $${calculateSum(finances)}`);
-
 let total = 0;
 let change = 0;
 let average;
@@ -142,8 +140,12 @@ for (let index =0; index < netArray.length; index++) {
 
 average = Math.round((netChangeSum / finances.length) * 100) / 100;
 
-// console.log(average);
-
+analysis = `Total: $${calculateSum(finances)}
+Average Change: $${average}
+Greatest Increase: 
+Greatest Decrease: 
+`
+console.log(analysis);
 // // average change
 //     // second array of differences
 // function diff(finances) {
