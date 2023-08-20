@@ -142,7 +142,7 @@ for (let index =0; index < netArray.length; index++) {
 
 average = Math.round((netChangeSum / finances.length) * 100) / 100;
 
-
+// console.log(average);
 
 // // average change
 //     // second array of differences
