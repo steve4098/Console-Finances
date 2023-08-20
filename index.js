@@ -136,6 +136,13 @@ for(let index = 0; index < finances.length; index++){
   }
 }
 
+for (let index =0; index < netArray.length; index++) {
+  netChangeSum += netArray[index];
+}
+
+average = Math.round((netChangeSum / finances.length) * 100) / 100;
+
+
 
 // // average change
 //     // second array of differences
