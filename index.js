@@ -115,8 +115,8 @@ let netArray = [];
 let netChangeSum = 0;
 // least min
 // greatest max 
-// let least = []
-// let greatest = []
+let least = ['', 99999999999999];
+let greatest = ['', 0];
 
 for(let index = 0; index < finances.length; index++){
   for(let index2 = 0; index2 < finances[index].length; index2++) {
@@ -126,6 +126,9 @@ for(let index = 0; index < finances.length; index++){
       change = finances[index][index2] - net;
       net = finances[index][index2];
       netArray.push(change);
+
+      if(change)
+
       // console.log(`total: ${total}`);
       // console.log(`change: ${change}`);
       // console.log(`net: ${net}`);
@@ -142,7 +145,7 @@ average = Math.round((netChangeSum / finances.length) * 100) / 100;
 
 analysis = `Total: $${calculateSum(finances)}
 Average Change: $${average}
-Greatest Increase: 
-Greatest Decrease: 
+Greatest Increase in Profit:  
+Greatest Decrease in Profit: 
 `
 console.log(analysis);
