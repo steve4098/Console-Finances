@@ -1,4 +1,4 @@
-var finances = [
+let finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
   ['Mar-2010', 322013],
@@ -106,15 +106,12 @@ for (let i=0; i<finances.length; i++) {
 return sum;
 }
 
-let total = 0;
-let change = 0;
-let average;
 let analysis;
+let average;
+let change = 0;
 let net =0;
 let netArray = [];
 let netChangeSum = 0;
-// least min
-// greatest max 
 let least = ['', 99999999999999];
 let greatest = ['', 0];
 
@@ -122,7 +119,6 @@ for(let index = 0; index < finances.length; index++){
   for(let index2 = 0; index2 < finances[index].length; index2++) {
 
     if(typeof finances[index][index2] !== 'string') {
-      total += finances[index][index2]
       change = finances[index][index2] - net;
       net = finances[index][index2];
       netArray.push(change);
@@ -135,6 +131,8 @@ for(let index = 0; index < finances.length; index++){
         least = [finances[index][0], finances[index][1]]
       }
 
+
+
       // console.log(`total: ${total}`);
       // console.log(`change: ${change}`);
       // console.log(`net: ${net}`);
@@ -142,6 +140,7 @@ for(let index = 0; index < finances.length; index++){
     }
   }
 }
+
 
 for (let index =0; index < netArray.length; index++) {
   netChangeSum += netArray[index];
