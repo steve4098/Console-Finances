@@ -151,7 +151,7 @@ average = Math.round((netChangeSum / finances.length) * 100) / 100;
 
 analysis = `Total: $${calculateSum(finances)}
 Average Change: $${average}
-Greatest Increase in Profit:  
-Greatest Decrease in Profit: 
+Greatest Increase in Profits/Losses: ${greatest}  
+Greatest Decrease in Profits/Losses: ${least}
 `
 console.log(analysis);
