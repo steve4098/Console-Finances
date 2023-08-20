@@ -127,7 +127,13 @@ for(let index = 0; index < finances.length; index++){
       net = finances[index][index2];
       netArray.push(change);
 
-      if(change)
+      if(change > greatest[0]){
+        greatest = [finances[index][0], finances[index][1]]
+      }
+
+      if(change < least[1]){
+        least = [finances[index][0], finances[index][1]]
+      }
 
       // console.log(`total: ${total}`);
       // console.log(`change: ${change}`);
